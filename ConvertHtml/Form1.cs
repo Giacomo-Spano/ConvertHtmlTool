@@ -73,6 +73,8 @@ namespace ConvertHtml
             StreamReader file = new StreamReader(path + "\\" + filename);
             string name = filename.Replace(".", "_");
 
+            sw.WriteLine("/* file autogenerato da ConvertHtml.exe */");
+            sw.WriteLine("/* NON MODIFICARE MANUALMENTE */");
 
             sw.WriteLine("/* " + name + "*/");
             sw.WriteLine("const char " + name + "[] PROGMEM = {");
